@@ -1,0 +1,26 @@
+---
+# The git_config variable contains a dict with key as section name and value another dict with the key value pair
+#
+# git_config:
+#   color:
+#     branch: auto
+#     diff: auto
+#     interactive: auto
+#     status: auto
+#   push:
+#     default: matching
+# git_users:
+#   - name: Michaël Rigart
+#     username: michael
+#     group: michael
+#     git_config:
+#       user:
+#         name: Michaël Rigart
+#         email: michael@netronix.be
+#       github:
+#         user: michaelrigart
+
+git_pkg_version:
+git_pkg_state: installed
+git_config: {}
+git_users: []

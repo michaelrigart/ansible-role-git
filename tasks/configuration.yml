@@ -1,0 +1,16 @@
+---
+
+- name: set global gitconfig
+  template:
+    src: global_gitconfig.j2
+    dest: /etc/gitconfig
+    mode: 0644
+
+- name: set users gitconfig
+  template:
+    src: user_gitconfig.j2
+    dest: '/home/{{ item.username }}/.gitconfig'
+    owner: '{{ item.username }}'
+    group: '{{ item.group }}'
+    mode: 0644
+  with_items: git_users

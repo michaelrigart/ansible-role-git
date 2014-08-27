@@ -1,0 +1,29 @@
+---
+
+- name: Debian | install specific git version
+  apt:
+    pkg: 'git={{ git_pkg_version }}'
+    state: installed
+    update_cache: yes
+    cache_valid_time: 3600
+  when: ansible_os_family == 'Debian' and git_pkg_version
+
+- name: Debian | install current/latest git version
+  apt:
+    pkg: git
+    state: '{{ git_pkg_state }}'
+    update_cache: yes
+    cache_valid_time: 3600
+  when: ansible_os_family == 'Debian' and not git_pkg_version
+
+- name: RedHat | install specific git version
+  yum:
+    name: 'git={{ git_pkg_version }}'
+    state: installed
+  when: ansible_os_family == 'RedHat' and git_pkg_version
+
+- name: RedHat | install current/latest git version
+  yum:
+    name: git
+    state: '{{ git_pkg_state }}'
+  when: ansible_os_family == 'RedHat' and not git_pkg_version
