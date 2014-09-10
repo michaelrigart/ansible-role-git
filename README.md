@@ -22,7 +22,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: michaelrigart.git }
+         - { role: MichaelRigart.git }
 
 License
 -------
