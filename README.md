@@ -1,6 +1,6 @@
 Ansible Git Role
 ================
-[![Build Status](https://travis-ci.org/michaelrigart/ansible-role-git.svg?branch=master)](https://travis-ci.org/michaelrigart/ansible-role-git)
+[![Build Status](https://semaphoreci.com/api/v1/projects/7b7b140a-2ea5-4989-8409-203388f953d4/459448/badge.svg)](https://semaphoreci.com/michaelrigart/ansible-role-git) [![Build Status](https://travis-ci.org/michaelrigart/ansible-role-git.svg?branch=master)](https://travis-ci.org/michaelrigart/ansible-role-git)
 
 An ansible role for installing and configuring git.
 
