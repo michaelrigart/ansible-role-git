@@ -13,4 +13,4 @@
     owner: '{{ item.username }}'
     group: '{{ item.group }}'
     mode: 0644
-  with_items: git_users
+  with_items: '{{ git_users }}'
